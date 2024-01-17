@@ -333,7 +333,7 @@ cmake_python_include_dir = sysconfig.get_path("include")
 ################################################################################
 package_name = os.getenv("TORCH_PACKAGE_NAME", "torch")
 package_type = os.getenv("PACKAGE_TYPE", "wheel")
-version = get_torch_version()
+version = "2.1.2" # get_torch_version()
 report(f"Building wheel {package_name}-{version}")
 
 cmake = CMake()
